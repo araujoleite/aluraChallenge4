@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopet</title>
+    <title>Login - Adopet</title>
 
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/cadastro_login.css">
 </head>
 <body class="body__background">
     <header class="header body__container">
@@ -22,15 +22,24 @@
             <a href="./index.html" class="nav__button"><img src="./assets/img/icone_casa.png" alt=""></a>
             <a href="#" class="nav__button"><img src="./assets/img/icone_msg.png" alt=""></a>
         </nav>
+        <img class="header__image" src="./assets/img/patas.png" alt="Patas de gatos e cachorro">
+
     </header>
 
     <main class="main body__container">
-        <img class="main__logo" src="./assets/img/adopet_creme.svg" alt="Marca da Adopet">
-        <h1 class="main__title">Boas-vindas!</h1>
-        <p class="main__text">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
-        <a href="./login.html" class="button">Já tenho conta</a>
-        <a href="./cadastro.html" class="button">Quero me cadastrar</a>
-        <img class="main__image" src="./assets/img/ilustracao_home.png" alt="">
+        <img class="main__logo" src="./assets/img/adopet_azul.svg" alt="Marca da Adopet">
+        <p class="main__subTitle">Já tem conta? Faça seu login:</p>
+        <div class="main__input">
+            <label for="email">E-mail</label>
+            <input type="email" class="input input__bigger" name="email" placeholder="Escolha seu melhor e-mail">
+        </div>
+        <div class="main__input">
+            <label for="senha">Senha</label>
+            <input type="password" class="input" name="senha" placeholder="Crie uma senha">
+        </div>
+        <a class="main__link" href="#">Esqueci minha senha</a>
+    
+        <button class="button" type="button" onclick="location.href='./home.html'">Entrar</button>
     </main>
 
     <footer class="footer">

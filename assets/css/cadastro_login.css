@@ -1,6 +1,8 @@
 @import "root.css";
 @import "base.css";
 
+
+/* HEADER */
 .header__image {
     position: absolute;
     right: 0;
@@ -20,6 +22,7 @@
         width: 300px;
     }
 }
+
 
 /* MAIN */
 .main {
@@ -52,6 +55,15 @@
         color: var(--cinza-escuro);
     }
 
+    .main__link {
+        color: var(--coral);
+        text-decoration: underline;
+        font-size: 0.8rem;
+    }
+
+    .main__link:hover {
+        color: var(--coral-claro);
+    }
 
 @media screen and (min-width: 768px) {
     .main {
@@ -70,48 +82,6 @@
 
     .main__logo {
         visibility: hidden;
-    }
-
-
-}
-
-
-/* INPUT */
-.input {
-    width: 75vw;
-    max-width: 400px;
-    height: 45px;
-    padding: 10px;
-    background: var(--cinza-claro);
-    outline-color: var(--azul);
-    border: solid 2px var(--cinza-claro);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    transition: 400ms;
-
-    text-align: center;
-    color: var(--cinza-escuro);
-    font-size: 1rem;
-}
-
-    .input::placeholder {
-        text-align: center;
-        color: var(--cinza);
-        font-size: 0.9rem;
-        transition: 300ms;
-    }
-
-    .input:invalid {
-        border-color: var(--coral);
-    }
-
-    .input:focus::placeholder {
-        opacity: 0%;
-    }
-
-@media screen and (min-width: 1280px) {
-    .input__bigger {
-        max-width: 600px;
     }
 }
 

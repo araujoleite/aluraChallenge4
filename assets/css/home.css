@@ -1,0 +1,102 @@
+@import "root.css";
+@import "base.css";
+
+
+/* HEADER */
+.header__user {
+   size: 40px;
+}
+
+
+/* BODY */
+.body__background {
+    background-image: url('../img/bg_elemento1.svg');
+}
+
+
+
+/* MAIN */
+.main {
+    flex-grow: 1;
+    margin-bottom: 50px ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    max-width: 250px;
+    text-align: center;
+}
+
+    .main__subTitle {
+        color: var(--azul);
+    }
+
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .main {
+        margin-bottom: 70px;
+    }
+}
+
+.pets {
+    display: grid;
+    gap: 15px;
+}
+
+.pet__container {
+    background-color: var(--cinza-claro);
+    padding: 25px;
+    width: 100vw;
+
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+
+}
+
+    .pet__image {
+        grid-row: span 2;
+    }
+
+    .pet__name {
+        font-size: 1rem;
+        color: var(--azul);
+        font-weight: 600;
+    }
+
+    .pet__list {
+        list-style-type: none;
+        font-size: 0.9rem;
+        color: var(--cinza-escuro);
+    }
+
+    .pet__location {
+        font-size: 0.8rem;
+        color: var(--cinza-escuro);
+    }
+
+    .pet__contact {
+        font-size: 0.7rem;
+        color: var(--cinza-escuro);
+        transition: 300ms;
+    }
+
+        .pet__contact:hover {
+            color: var(--verde);
+        }
+
+        .pet__contact::before {
+            content: url('/assets/img/icone_responsavel.png');
+            margin-right: 5px;
+            position: relative;
+            top: 6px;
+        }
