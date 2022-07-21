@@ -1,5 +1,10 @@
 @import "root.css";
-@import "base.css";
+
+
+/* BODY */
+.body__background {
+    background-image: none;
+}
 
 
 /* HEADER */
@@ -8,63 +13,57 @@
 }
 
 
-/* BODY */
-.body__background {
-    background-image: url('../img/bg_elemento1.svg');
-}
-
-
-
 /* MAIN */
 .main {
     flex-grow: 1;
-    margin-bottom: 50px ;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 1.5rem;
-    max-width: 250px;
     text-align: center;
 }
 
     .main__subTitle {
         color: var(--azul);
+        width: 250px;
     }
-
 
 @media screen and (min-width: 768px) {
     .main {
-        max-width: 500px;
+        padding: 30px 50px;
+        width: 100%;
+    }
+
+    .main__subTitle {
+        width: auto;
     }
 }
 
-@media screen and (min-width: 1280px) {
-    .main {
-        margin-bottom: 70px;
-    }
-}
 
+/* PETS */
 .pets {
     display: grid;
     gap: 15px;
+    width: 100vw;
+    z-index: -2;
 }
 
 .pet__container {
     background-color: var(--cinza-claro);
     padding: 25px;
-    width: 100vw;
 
     text-align: left;
 
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-
+    gap: 20px;
 }
 
     .pet__image {
         grid-row: span 2;
+        justify-self: right;
     }
 
     .pet__name {
@@ -95,8 +94,25 @@
         }
 
         .pet__contact::before {
-            content: url('/assets/img/icone_responsavel.png');
+            content: url('../img/icone_responsavel.png');
             margin-right: 5px;
             position: relative;
             top: 6px;
         }
+
+@media screen and (min-width: 768px) {
+    .pets {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .pets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .pet__container {
+        grid-template-columns: auto 1fr;
+    }
+}

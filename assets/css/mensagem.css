@@ -1,0 +1,95 @@
+@import "root.css";
+
+
+/* BODY */
+.body__background {
+    background-image: none;
+}
+
+
+/* HEADER */
+.header__user {
+   size: 40px;
+}
+
+
+/* MAIN */
+.main {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    text-align: center;
+}
+
+    .main__subTitle {
+        color: var(--azul);
+        width: 250px;
+    }
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding: 30px 50px;
+        width: 100%;
+    }
+
+    .main__subTitle {
+        width: auto;
+    }
+}
+
+
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+    background-color: var(--cinza-claro);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+}
+
+.form__input > label {
+    color: var(--azul);
+    font-weight: 600;
+}
+
+.input {
+    background-color: var(--branco);
+    border-color: var(--branco);
+
+    text-align: left;
+}
+
+.input::placeholder {
+    text-align: left;
+}
+
+
+@media screen and (min-width: 768px) {
+    .pets {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .pets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .pet__container {
+        grid-template-columns: auto 1fr;
+    }
+}
