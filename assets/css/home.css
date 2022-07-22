@@ -46,11 +46,11 @@
     display: grid;
     gap: 15px;
     width: 100vw;
-    z-index: -2;
 }
 
 .pet__container {
     background-color: var(--cinza-claro);
+    mix-blend-mode: multiply;
     padding: 25px;
 
     text-align: left;

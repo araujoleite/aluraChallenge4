@@ -22,6 +22,7 @@
     align-items: center;
     row-gap: 1.5rem;
     text-align: center;
+    padding-bottom: 30px;
 }
 
     .main__subTitle {
@@ -31,8 +32,9 @@
 
 @media screen and (min-width: 768px) {
     .main {
+        margin-top: 30px;
         padding: 30px 50px;
-        width: 100%;
+        width: 600px;
     }
 
     .main__subTitle {
@@ -52,12 +54,13 @@
     padding: 25px;
     border-radius: 5px;
 }
-
+ 
 .form__input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 5px;
+    width: 100%;
 }
 
 .form__input > label {
@@ -68,12 +71,19 @@
 .input {
     background-color: var(--branco);
     border-color: var(--branco);
+    max-width: 100%;
 
     text-align: left;
 }
 
-.input::placeholder {
-    text-align: left;
+    .input::placeholder {
+        text-align: left;
+    }
+
+.textarea {
+    resize: none;
+    height: 200px;
+    font-family: var(--font-first);
 }
 
 
