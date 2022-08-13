@@ -48,6 +48,12 @@
     padding: 25px;
     border-radius: 5px;
 }
+
+.form__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
  
 .form__input {
     display: flex;
@@ -60,6 +66,17 @@
 .form__input > label {
     color: var(--azul);
     font-weight: 600;
+}
+
+.form__thumb {
+    width: 80px;
+    align-self: center;
+}
+
+.form__thumbSubtitle {
+    font-size: 0.9rem;
+    color: var(--coral);
+    align-self: center;
 }
 
 .input {

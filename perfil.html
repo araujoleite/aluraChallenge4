@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/mensagem.css">
+    <link rel="stylesheet" href="./assets/css/perfil.css">
 </head>
 <body class="body__background">
     <header class="header body__container">
@@ -22,12 +22,18 @@
             <a href="./index.html" class="nav__button"><img src="./assets/img/icone_casa.png" alt=""></a>
             <a href="./mensagem.html" class="nav__button"><img src="./assets/img/icone_msg.png" alt=""></a>
         </nav>
-        <a href="./perfil.html" class="header__user"><img class="header__user" src="./assets/img/icone_user.png" alt=""></a>
+        <a href="./perfil.html" class="header__user"><img class="header__user" src="./assets/img/user_thumbnail.png" alt=""></a>
     </header>
 
     <main class="main body__container">
-        <p class="main__subTitle">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
+        <p class="main__subTitle">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
         <form class="form">
+            <p class="form__title">Perfil</p>
+            <div class="form__input">
+                <label for="nome">Foto</label>
+                <img class="form__thumb" src="./assets/img/user_thumbnail.png" alt="foto de perfil">
+                <p class="form__thumbSubtitle">Clique na foto para editar</p>
+            </div>
             <div class="form__input">
                 <label for="nome">Nome</label>
                 <input type="text" class="input" name="nome" placeholder="Insira seu nome completo">
@@ -37,12 +43,12 @@
                 <input type="number" class="input" name="nome" placeholder="Insira seu telefone e/ou whatsapp">
             </div>
             <div class="form__input">
-                <label for="number">Nome do animal</label>
-                <input type="text" class="input" name="nome" placeholder="Por qual animal você se interessou?">
+                <label for="number">Cidade</label>
+                <input type="text" class="input" name="nome" placeholder="Cidade que reside">
             </div>
             <div class="form__input">
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" class="input textarea"  cols="30" rows="10" placeholder="Escreva sua mensagem."></textarea>
+                <label for="mensagem">Sobre</label>
+                <textarea name="mensagem" class="input textarea"  cols="30" rows="10" placeholder="Escreva sobre você."></textarea>
             </div>
             <button class="button">Enviar</button>
         </form>
